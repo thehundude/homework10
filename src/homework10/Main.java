@@ -46,6 +46,9 @@ public class Main {
         // #1 printCSVFromSacramentoList method
         // kell lennie egy testdir mappának a C:-n, különben hibát dob
         SacramentoUtil.printCSVFromSacramentoList(sacramentoCrime, "C:\\testdir\\NewSacramento.csv");
+
+        // #2 findBiggestGridByDistricts
+        SacramentoUtil.findBiggestGridByDistricts(sacramentoCrime);
         System.out.println("Kész.");
     }
 }
