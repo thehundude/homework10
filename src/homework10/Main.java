@@ -4,8 +4,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 public class Main {
 
@@ -38,9 +36,16 @@ public class Main {
             }
         }
 
+        /*
         // foreach kiíratás
         for (Sacramento i : sacramentoCrime) {
             System.out.println(i.toString());
         }
+        */
+
+        // #1 printCSVFromSacramentoList method
+        // kell lennie egy testdir mappának a C:-n, különben hibát dob
+        SacramentoUtil.printCSVFromSacramentoList(sacramentoCrime, "C:\\testdir\\NewSacramento.csv");
+        System.out.println("Kész.");
     }
 }
