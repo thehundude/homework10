@@ -45,4 +45,15 @@ public class SacramentoUtil {
             }
         }
     }
+
+    // UML-ben nem szerepelt paraméterként a bűntény típusa, viszont a feladatleírásban igen
+    public static int countCrimeType(ArrayList<Sacramento> sacramentos, String crimeType) {
+        int crimeTypeNumber = 0;
+        for (Sacramento i : sacramentos) {
+            if (i.getCrimedescr().contains(crimeType.toUpperCase())) {
+                crimeTypeNumber++;
+            }
+        }
+        return crimeTypeNumber;
+    }
 }

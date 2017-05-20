@@ -52,6 +52,9 @@ public class Main {
 
         // #3 getStreets
         SacramentoUtil.getStreets(sacramentoCrime);
+
+        // #4 countCrimeType
+        System.out.println("Vandalizmus: " + SacramentoUtil.countCrimeType(sacramentoCrime, "vandalism"));
         System.out.println("Kész.");
     }
 }
