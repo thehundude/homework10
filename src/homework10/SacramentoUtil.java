@@ -37,4 +37,12 @@ public class SacramentoUtil {
             System.out.println(item.getValue());
         }
     }
+
+    public static void getStreets(ArrayList<Sacramento> sacramentos) {
+        for (Sacramento i : sacramentos) {
+            if (i.getAddress().contains("ST") == true) {
+                System.out.println(i.toString());
+            }
+        }
+    }
 }

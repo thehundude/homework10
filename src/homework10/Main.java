@@ -49,6 +49,9 @@ public class Main {
 
         // #2 findBiggestGridByDistricts
         SacramentoUtil.findBiggestGridByDistricts(sacramentoCrime);
+
+        // #3 getStreets
+        SacramentoUtil.getStreets(sacramentoCrime);
         System.out.println("Kész.");
     }
 }
