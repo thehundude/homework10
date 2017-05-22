@@ -11,7 +11,14 @@ public class SacramentoUtil {
     public static void printCSVFromSacramentoList(ArrayList<Sacramento> sacramentos, String path) throws IOException {
         FileWriter writer = new FileWriter(path);
         BufferedWriter buffer = new BufferedWriter(writer);
-        buffer.write(sacramentos.toString());
+        // első sor
+        buffer.write("cdatetime,address,district,beat,grid,crimedescr,ucr_ncic_code,latitude,longitude\n");
+        // adatok
+        for (Sacramento i : sacramentos) {
+            buffer.write(i.getCdatetime() + "," + i.getAddress() + "," + i.getDistrict() + "," + i.getBeat() + "," +
+            i.getGrid() + "," + i.getCrimedescr() + "," + i.getUcr_ncic_code() + "," + i.getLatitude() + "," +
+            i.getLongitude() + "\n");
+        }
         buffer.close();
     }
 
